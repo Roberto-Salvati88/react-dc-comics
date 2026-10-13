@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* header */
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+}
+
+.logo {
+  height: 80px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 20px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.nav-list a {
+  display: block;
+  line-height: 116px;
+  border-bottom: 4px solid transparent;
+}
+
+.nav-list a.active,
+.nav-list a:hover {
+  color: #0282f9;
+  border-bottom-color: #0282f9;
+}
+
+/* main */
+.jumbotron {
+  height: 400px;
+  background: url('/img/jumbotron.jpg') top center / cover;
+}
+
+.comics {
+  position: relative;
+  background-color: #1c1c1c;
+  color: #fff;
+  padding: 60px 0 30px;
+}
+
+.series-label {
+  position: absolute;
+  top: -25px;
+  background-color: #0282f9;
+  padding: 10px 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.comics-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 20px;
+}
+
+.comic-card {
+  width: calc(100% / 6 - 100px / 6);
+}
+
+.comic-card img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: top;
+}
+
+.comic-card h3 {
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.center {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.btn-blue {
+  background-color: #0282f9;
+  color: #fff;
+  border: none;
+  padding: 10px 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* fascia azzurra */
+.shop-band {
+  background-color: #0282f9;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.shop-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.shop-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.shop-item img {
+  height: 50px;
+}
+
+/* footer */
+.footer-top {
+  background: url('/img/footer-bg.jpg') center / cover;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer-columns {
+  display: flex;
+  gap: 30px;
+}
+
+.footer-columns h4 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.footer-columns li {
+  font-size: 12px;
+  color: #959595;
+  line-height: 1.8;
+}
+
+.footer-bottom {
+  background-color: #303030;
+  padding: 30px 0;
+}
+
+.footer-bottom-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-outline {
+  background: none;
+  border: 2px solid #0282f9;
+  color: #fff;
+  padding: 12px 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #0282f9;
+  font-weight: 700;
+  text-transform: uppercase;
+}
